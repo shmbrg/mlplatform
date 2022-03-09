@@ -107,3 +107,19 @@ resource "helm_release" "mlflow" {
     ]
 }
 
+/*
+# Expose mlFlow to internet
+resource "helm_release" "traefik" {
+    depends_on      = [helm_release.mlflow]
+    repository      = "https://helm.traefik.io/traefik"
+    chart           = "traefik"
+    version         = "10.14.2"
+    name            = "${var.name_prefix}-traefik"
+    namespace       = var.namespace
+    timeout         = 90
+
+
+}
+*/
+
+
