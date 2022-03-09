@@ -38,20 +38,20 @@ resource "helm_release" "minio" {
             generate-name = "minio/minio"
             service = {
                 port = 9000
-        }
-        resources = {
-            requests = {
-                memory = "256Mi"
             }
-        }
-        buckets = [{
-            name   = "mlflow-artifacts"
-            policy = "none"
-            purge  = "false"
-        }]
-        persistence = {
-            size = "10Gi"
-        }
+            resources = {
+                requests = {
+                    memory = "256Mi"
+                }
+            }
+            buckets = [{
+                name   = "mlflow-artifacts"
+                policy = "none"
+                purge  = "false"
+            }]
+            persistence = {
+                size = "10Gi"
+            }
         })
     ]
 }
@@ -99,8 +99,8 @@ resource "helm_release" "mlflow" {
                     database = "mlflow"
                 }
             }
-            awsAccessKeyId      = "minio"    # module.minio.CONSOLE_ACCESS_KEY
-            awsSecretAccessKey  = "minio123" # module.minio.CONSOLE_SECRET_KEY # pragma: allowlist secret
+            awsAccessKeyId      = "minio"    
+            awsSecretAccessKey  = "minio123"
             s3EndpointUrl       = "http://${var.name_prefix}-minio.${var.namespace}.svc.cluster.local:9000"
             defaultArtifactRoot = "s3://mlflow-artifacts/"
         })
