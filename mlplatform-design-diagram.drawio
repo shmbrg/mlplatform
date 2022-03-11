@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-11T15:23:49.306Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="-5ezXKKjDD8rsGZ9HMP2" version="17.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-11T15:23:57.017Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36" etag="jTv8hTO-HjkX8UMI3sCD" version="17.0.0" type="github">
   <diagram id="4-0ibP7jyttyZsECtZv_" name="Page-1">
     <mxGraphModel dx="3756" dy="2776" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -53,7 +53,7 @@
           <mxGeometry x="420" y="155" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qvyCjxB70agYPjTjunsr-9" value="" style="aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image;image=img/lib/active_directory/internet_globe.svg;" vertex="1" parent="1">
-          <mxGeometry x="957.5" y="-190" width="92.5" height="92.5" as="geometry" />
+          <mxGeometry x="970" y="-177.5" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="qvyCjxB70agYPjTjunsr-15" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;labelBorderColor=none;strokeWidth=3;fillColor=#000000;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
