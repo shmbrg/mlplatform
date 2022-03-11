@@ -3,3 +3,4 @@ infra-mlplatform/.terraform.lock.hcl
 infra-mlplatform/terraform.tfstate
 infra-mlplatform/terraform.tfstate.backup
 infra-mlplatform/.terraform.tfstate.lock.info
+.idea/
