@@ -1,6 +1,6 @@
-infra-mlplatform/.terraform
-infra-mlplatform/.terraform.lock.hcl
-infra-mlplatform/terraform.tfstate
-infra-mlplatform/terraform.tfstate.backup
-infra-mlplatform/.terraform.tfstate.lock.info
+infrastructure/.terraform
+infrastructure/.terraform.lock.hcl
+infrastructure/terraform.tfstate
+infrastructure/terraform.tfstate.backup
+infrastructure/.terraform.tfstate.lock.info
 .idea/
