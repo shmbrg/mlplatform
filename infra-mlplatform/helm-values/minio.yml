@@ -1,0 +1,19 @@
+accessKey: "minio"
+secretKey: "minio123"
+generate-name: "minio/minio"
+
+service:
+  port: 9000
+
+resources:
+  requests:
+    memory: 256Mi
+
+
+buckets:
+ - name: mlflow-artifacts
+   policy: none
+   purge: false
+
+persistence:
+  size: 10Gi

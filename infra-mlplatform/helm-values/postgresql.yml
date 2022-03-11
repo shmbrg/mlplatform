@@ -1,0 +1,5 @@
+auth:
+  rootPassword: "postgresql123"
+  database: "mlflow"
+  username: "mlflow"
+  password: "mlflow123"

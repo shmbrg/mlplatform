@@ -1,0 +1,12 @@
+backendStore:
+  postgresql:
+    username: "mlflow"
+    password: "mlflow123"
+    host: "mlp-database-postgresql.mlplatform.svc.cluster.local"
+    port: 3306
+    database: "mlflow"
+
+awsAccessKeyId: "minio"
+awsSecretAccessKey: "minio123"
+s3EndpointUrl: "http://mlp-minio.mlplatform.svc.cluster.local:9000"
+defaultArtifactRoot: "s3://mlflow-artifacts/"
