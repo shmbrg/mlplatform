@@ -21,4 +21,4 @@ mlflow_chart_version                  = "1.0.1"
 # Traefik/Ingress variables
 ingress_gateway_chart_repo            = "https://helm.traefik.io/traefik"
 ingress_gateway_chart_name            = "traefik"
-ingress_gateway_chart_version         = "10.0.0"
+ingress_gateway_chart_version         = "10.9.1"
