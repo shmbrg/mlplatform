@@ -18,6 +18,11 @@ mlflow_chart_repo                     = "https://larribas.me/helm-charts"
 mlflow_chart_name                     = "mlflow"
 mlflow_chart_version                  = "1.0.1"
 
+# metalLB variables
+metallb_chart_repo                     = "https://metallb.github.io/metallb"
+metallb_chart_name                     = "metallb"
+metallb_chart_version                  = "0.12.1"
+
 # Traefik/Ingress variables
 ingress_gateway_chart_repo            = "https://helm.traefik.io/traefik"
 ingress_gateway_chart_name            = "traefik"

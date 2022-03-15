@@ -1,0 +1,15 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: minio
+  namespace: mlplatform
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: PathPrefix(`/minio`)
+      kind: Rule
+      services:
+        - name: mlp-minio
+          port: 9000

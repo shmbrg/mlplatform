@@ -1,0 +1,15 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: mlflow
+  namespace: mlplatform
+spec:
+  entryPoints:
+    - web
+  routes:
+    - match: PathPrefix(`/mlflow`) || Host(`mlflow.example.com`)
+      kind: Rule
+      services:
+        - name: mlp-mlflow
+          port: 5000
