@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, log_loss
 
 
 # Enable auto logging
-mlflow.set_tracking_uri('https://sebastianhumberg.xyz/mlflow')
+#mlflow.set_tracking_uri('https://sebastianhumberg.xyz/mlflow')
 mlflow.lightgbm.autolog()
 
 
@@ -19,7 +19,7 @@ flower_names = {'Setosa': 0, 'Versicolor': 1, 'Virginica': 2}
 df = pd.DataFrame(data=np.c_[iris.data, iris.target], columns=iris.feature_names + ["target"])
 
 X = df[iris.feature_names]
-y = df['target'].map(flower_names)
+y = df['target'].astype(int)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
@@ -34,8 +34,8 @@ def main():
       "num_class": 3, 
       "learning_rate": 0.2,
       "metric": "multi_logloss",
-      "feature_fraction": 0.8,
-      "bagging_fraction": 0.9,
+      "feature_fraction": 0.5,
+      "bagging_fraction": 0.8,
       "seed": 42,
     }
     
